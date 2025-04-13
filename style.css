@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.img{
+    margin: 10px;
+    width: 80%;
+    height: 100%;
+    display: flex  ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.heading
+{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.images{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    
+}
+.images div {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:20px;
+    width: 35vh;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0  20px #333;
+    object-fit: cover;
+
+}
+.images figcaption {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 100%;
+    color: white;
+    text-align: start;
+    padding: 6px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+.images div:hover {
+    
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    filter:drop-shadow(0 0 20px #333);
+    box-shadow: 0 0 10px #333;
+}
+.images div:hover img {
+    filter:grayscale(0%);
+}
+.images div:hover figcaption {
+    display: block;
+}
